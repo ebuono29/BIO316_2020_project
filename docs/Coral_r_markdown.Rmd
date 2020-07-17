@@ -21,7 +21,6 @@ Coral reefs play important parts in ocean environment, as well as acting as buff
 Palau is a country made of several outer islands and a main island. It is located in the western Pacific Ocean. Palau will be focused on in this project due to the fact that Yap's map was not available to work with and visualize.
 
 
-
 ### Required Packages
 
 These are the required R packages to ensure the smooth running of this project's code.
