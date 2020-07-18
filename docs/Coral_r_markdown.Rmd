@@ -39,14 +39,12 @@ library(patchwork)
 
 These data utilized is from the Biological & Chemical Oceanography Data Management Office. Three different data sets are downloaded here, and a map of the Palau Islands as well. Later some of these data tables are merged to be able to use in visualizations. 
 
-```{r, message = FALSE, cache=TRUE}
+```{r, message = FALSE}
+coral <- read.csv('http://dmoserv3.bco-dmo.org/jg/serv/BCO-DMO/Coral_Reef_Adjustment/extension_rates.flat0?', sep = "", na.strings = c('nd', 'encrusting'))
 
-coral = read.csv('http://dmoserv3.bco-dmo.org/jg/serv/BCO-DMO/Coral_Reef_Adjustment/extension_rates.flat0?
-', sep = "", na.strings = c('nd', 'encrusting'))
+sites_data <- read.csv('http://dmoserv3.bco-dmo.org/jg/serv/BCO-DMO/Coral_Reef_Adjustment/site_list.flat0?', sep = "", na.strings = c('nd'))
 
-sites_data = read.csv('http://dmoserv3.bco-dmo.org/jg/serv/BCO-DMO/Coral_Reef_Adjustment/site_list.flat0?', sep = "", na.strings = c('nd'))
-
-model_data = read.csv('http://dmoserv3.bco-dmo.org/jg/serv/BCO-DMO/Coral_Reef_Adjustment/model_output.flat0?',sep = "", na.strings = c('nd'))
+model_data <- read.csv('http://dmoserv3.bco-dmo.org/jg/serv/BCO-DMO/Coral_Reef_Adjustment/model_output.flat0?',sep = "", na.strings = c('nd'))
 
 palau = getData('GADM', country='Palau', level = 0)
 
