@@ -2,7 +2,7 @@
 title: "Palau's Coral Carbonate Production and Relation to Growth Potential"
 author: "Emily Buono"
 date: "7/17/2020"
-output: html_document
+output: github_document
 bibliography: bibliography.bib
 ---
 
